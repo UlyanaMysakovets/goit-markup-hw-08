@@ -1,0 +1,20 @@
+.button {
+    color: var(--hero-title-color);
+    background-color: var(--accent-color);
+
+}
+
+.button.primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+
+
+    color: var(--hero-title-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
