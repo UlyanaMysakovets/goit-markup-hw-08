@@ -1,100 +1,144 @@
-.team-list {
-    display: flex;
-    gap: 30px;
+ .team-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     grid-gap: 30px;
+ }
 
-    & .title {
-        color: var(--primary-text-color);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-    }
+.team-list .title {
+         color: var(--primary-text-color);
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 1.19;
+         text-align: center;
+     }
 
 
-    & .text {
+.team-list .text {
         color: var(--secondary-text-color);
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
-
+        margin-bottom: 16px;
     }
-}
+
 
 .imagine-fone {
-    flex-basis: calc((100% - 90px) / 4);
+    background-color: var(--hero-title-color);
+        
+    // flex-basis: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 768px) {
+    .imagine-fone{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imagine-fone {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imagine-fone {
+        width: 270px;
+    }
+}
+
 .photo-cards {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 
-}
+ }
+
+ @media screen and (min-width: 1200px) {
+    .photo-cards {
+         padding: 30px 0px;
+     }
+ }
 
 .subtitle {
-    margin-bottom: 10px;
-}
-
-.text {
-    margin-bottom: 16px;
-}
-
-.imagine-fone {
-    background-color: var(--hero-title-color);
-}
-
+     margin-bottom: 10px;
+ }
 
 .team {
-    background-color: var(--background-cloudy-color);
-}
+     background-color: var(--background-cloudy-color);
+ }
 
 .social-list {
     display: flex;
-    justify-content: center;
+    justify-content: center;     
     column-gap: 10px;
+    list-style: none;
+ }
 
-}
+  @media screen and (min-width: 1200px) {
+    .social-list-link:hover,
+    .social-list-link:focus {
+            background-color: var(--accent-color);
+        } 
+ }
 
-.social-list-link {
+ .social-list-link {
     display: flex;
-    align-items: center;
+     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--hero-title-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: var(--hero-title-color);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.social-list-icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
+             &:hover,
+             &:focus {
+                 background-color: var(--accent-color);
+             }
+    
+             &:hover .social-list-icon,
+             &:focus .social-list-icon {
+                fill: var(--hero-title-color);
+    
+             }
+ }
+
+
+
+ .social-list-icon {
+    margin: 0 10px;
+     width: 20px;
+     height: 20px;
+     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 
-.social-list-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--hero-title-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
+// .social-list-link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     background-color: var(--hero-title-color);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover .social-list-icon,
-    &:focus .social-list-icon {
-        fill: var(--hero-title-color);
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
 
-    }
-}
+//     &:hover .social-list-icon,
+//     &:focus .social-list-icon {
+//         fill: var(--hero-title-color);
+
+//     }
+// }
 
 
 

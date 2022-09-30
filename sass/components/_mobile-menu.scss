@@ -9,6 +9,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    background-color: white;
 }
 
 .mobile-menu.is-open {
@@ -35,6 +36,7 @@
 }
 
 .mobile-menu__close-icon {
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
+   
 }
