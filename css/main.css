@@ -407,7 +407,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
 }
 
 .mobile-nav-list {
@@ -473,6 +472,10 @@ img {
   transform: rotate(90deg);
 }
 
+.mobile-nav-social-list__link:not(:last-child)::after {
+  border: none;
+}
+
 .mobile-nav-social-list__link {
   flex-direction: row;
   margin-right: 20px;
@@ -484,13 +487,12 @@ img {
   align-items: center;
 }
 
-.menu-nav {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-}
-
 @media screen and (min-width: 768px) {
+  .menu-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
   .open-mobile-menu-button {
     display: none;
   }
@@ -544,33 +546,32 @@ img {
   background-color: var(--accent-color);
 }
 
-.contacts-mail__envelope {
-  margin-right: 10px;
-}
-.contacts-mail__envelope:hover .envelope {
-  fill: var(--accent-color);
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts {
-    display: flex;
-    flex-direction: column;
-  }
-  .contacts-mail__envelope {
-    margin-right: 8px;
-  }
-  .contacts-mail__envelope:hover .envelope {
-    fill: var(--accent-color);
-  }
-  .contacts-phone__smartphone {
-    margin-right: 8px;
-  }
-  .contacts-phone__smartphone:hover .smartphone {
-    fill: var(--accent-color);
-  }
-  .contacts {
+    display: block;
+    margin-left: auto;
+    padding-left: 94px;
+    align-items: center;
     padding-top: 21px;
     padding-bottom: 21px;
+  }
+  .contacts .contacts-mail__envelope {
+    margin-right: 8px;
+  }
+  .contacts .contacts-mail__envelope:hover .envelope {
+    fill: var(--accent-color);
+  }
+  .contacts .contacts-phone__smartphone {
+    margin-right: 8px;
+    color: var(--secondary-text-color);
+  }
+  .contacts .contacts-phone__smartphone:hover .smartphone {
+    fill: var(--accent-color);
+  }
+  .contacts .adress-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 .contacts .link {
@@ -584,17 +585,33 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-phone__smartphone {
-  margin-right: 10px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .contacts-phone__smartphone {
+    margin-right: 10px;
+  }
+  .contacts-phone__smartphone:hover .smartphone {
+    fill: var(--accent-color);
+  }
+  .contacts-mail__envelope {
+    margin-right: 10px;
+  }
+  .contacts-mail__envelope:hover .envelope {
+    fill: var(--accent-color);
+  }
+  .contacts .item + .item {
+    margin-left: 50px;
+  }
+  .adress-header {
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+  }
 }
-.contacts-phone__smartphone:hover .smartphone {
-  fill: var(--accent-color);
-}
-
-.contacts .item + .item {
-  margin-left: 50px;
-}
-
 .hero {
   background-color: #C4C4C4;
   text-align: center;
