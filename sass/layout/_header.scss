@@ -40,7 +40,10 @@
 
 .mobile-nav-list {
     margin-top: 48px;
+   
 }
+
+
 
 .mobile-nav-list__link {
     color: #212121;
@@ -53,7 +56,7 @@
 
 }
 .mobile-nav-list__item {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .mobile-nav-list__link_current {
@@ -66,8 +69,21 @@
 }
 
 .mobile-menu__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 302px;
+    //align-items: flex-end;
+    //justify-content: flex-end;
+    //margin-top: 302px;
 }
+
+// .mobile-contacts {
+//     //width: 480px;
+//     //height: 796px;
+//     //display: flex;
+//     align-items: flex-end;
+// }
 
 .mobile-menu__contacts-tel-item {
     color: var(--accent-color);
@@ -76,7 +92,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-align: left;
-    // margin-bottom: 32px;
+     margin-bottom: 32px;
 
 }
 
@@ -217,7 +233,7 @@
 
     .contacts-phone__smartphone {
         margin-right: 8px;
-        color: var(--secondary-text-color);
+        
         
          &:hover .smartphone {
             fill: var(--accent-color);
@@ -233,6 +249,7 @@
          display: flex;
          flex-direction: row;
           align-items: center;
+          fill: currentColor;
       }
 
     // .adress-header {

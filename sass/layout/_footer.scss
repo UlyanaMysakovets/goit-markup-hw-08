@@ -100,10 +100,10 @@
     }
 }
 
- .page-adress {
-    margin-top: 60px;
+//  .page-adress {
+    // margin-top: 60px;
     //margin-left: 70px;
- }
+//  }
 
  @media screen and (max-width: 767px) {
     .page-adress {
@@ -195,6 +195,10 @@
             display: inline-flex;
             flex-direction: row;
         }
+
+    .footer-modal-text {
+        margin-right: auto;
+    }
   }
 
  .footer-form-message {

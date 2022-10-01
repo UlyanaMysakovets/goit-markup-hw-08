@@ -21,22 +21,34 @@
 .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    height: 100%;
 }
 
 
-.mobile-menu__close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    line-height: 0;
+  .mobile-menu__close-button {
+// //     position: absolute;
+//     top: 10px;
+//     right: 15px;
+     background-color: transparent;
+     border: 0;
+     padding: 0;
+     line-height: 0;
 
-}
+ }
 
 .mobile-menu__close-icon {
-   width: 30px;
-   height: 30px;
+   width: 40px;
+   height: 40px;
+   position: absolute;
+    top: 10px;
+    right: 15px;
+//    background-color: transparent;
+//    border: 0;
+//    padding: 0;
+//    line-height: 0;
    
+}
+
+.mobile-menu__close-button:hover .mobile-menu__close-icon {
+    color: var(--accent-color);
 }

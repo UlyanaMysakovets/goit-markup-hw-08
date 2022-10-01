@@ -12,6 +12,8 @@
     background-size: cover;
 }
 
+
+
   @media screen and (min-device-pixei-ratio: 2) and (max-width: 767px),
        screen and (min-resolution: 192dpi) and (max-width: 767px),
        screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -58,11 +60,11 @@
            }
          }
 
-     .hero__title {
+      .hero__title {
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
-        width: 360px;
+        width: 100%;
         text-transform: uppercase;
     
         color: var(--hero-title-color);
