@@ -117,12 +117,19 @@
         }
     }
 
+ 
+ .social-list-fotter {
+     width: 20px;
+     height: 20px;
+     fill: var(--hero-title-color);
+ }
+
  .social-list-adress {
-    
+
      display: flex;
      justify-content: center;
      align-items: center;
-    margin-top: 20px;
+     margin-top: 20px;
      width: 44px;
      height: 44px;
      border-radius: 50%;
@@ -137,11 +144,12 @@
 
  }
 
- .social-list-fotter {
-     width: 20px;
-     height: 20px;
-     fill: var(--hero-title-color);
- }
+ @media screen and (min-width: 1200px) {
+    .social-list-adress:hover,
+        .social-list-adress:focus {
+            background-color: var(--accent-color);
+        }
+    }
 
  @media screen and (min-width: 1200px) {
     .footer-modal-form {
@@ -199,6 +207,8 @@
     .footer-modal-text {
         margin-right: auto;
     }
+
+        
   }
 
  .footer-form-message {
