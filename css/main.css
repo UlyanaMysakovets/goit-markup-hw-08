@@ -741,7 +741,6 @@ img {
 }
 .benefit-list {
   display: flex;
-  column-gap: 30px;
   flex-wrap: wrap;
 }
 .benefit-list .title {
@@ -766,13 +765,19 @@ img {
   .benefit-list .title {
     text-align: left;
   }
+  .benefit-list {
+    column-gap: 30px;
+  }
   .elements {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .benefit-list .title {
     text-align: left;
+  }
+  .benefit-list {
+    column-gap: 30px;
   }
   .elements {
     flex-basis: calc((100% - 90px) / 4);
@@ -967,7 +972,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .company {
     width: calc((100% - 30px) / 2);
   }
