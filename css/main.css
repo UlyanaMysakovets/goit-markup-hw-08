@@ -471,6 +471,9 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.mobile-menu__contacts-tel {
   padding-bottom: 32px;
 }
 
@@ -721,7 +724,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    grid-gap: 30px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -756,6 +758,11 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 480px) {
+  .benefit-list .text {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .benefit-list .title {
     text-align: center;
